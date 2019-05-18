@@ -246,7 +246,7 @@ get_header();
       </div>
       <div class="card  1 zoom wow zoomIn" data-wow-delay="0.5s">
         <div class="card-overplay">
-          <p class="link-project"><a href="#">Village Place <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+          <p class="link-project"><a href="/single-project">Village Place <i class="fa fa-caret-right" aria-hidden="true"></i></a>
           </p>
         </div>
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/list_img.jpg" alt="slider">
