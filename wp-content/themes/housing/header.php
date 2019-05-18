@@ -54,7 +54,7 @@
           <div class="my_nav">
             <ul class="navbar-nav mt-2 mt-lg-0" id="my-navbar-js">
               <li class="nav-item active">
-                <a class="nav-link" href="">Trang Chủ <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Trang Chủ <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Giới Thiệu</a>

@@ -97,6 +97,19 @@
     </div>
   </footer>
   <a id="back-to-top"></a>
+
+
+  <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.min.js"></script>
+  <script src="<?php bloginfo('stylesheet_directory'); ?>/js/popper.min.js"></script>
+  <script src="<?php bloginfo('stylesheet_directory'); ?>/js/bootstrap.min.js"></script>
+  <!-- <script type="text/javascript" src="js/slick.js"></script> -->
+  <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/slick.min.js">
+  </script>
+
+  <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/wowslider.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/script_wow.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/wow.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/script.js"></script>
 <?php wp_footer(); ?>
 
 </body>
