@@ -98,7 +98,7 @@
   </footer>
   <a id="back-to-top"></a>
 
-
+  <!-- change loading script for heroku -->
   <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.min.js"></script>
   <script src="<?php bloginfo('stylesheet_directory'); ?>/js/popper.min.js"></script>
   <script src="<?php bloginfo('stylesheet_directory'); ?>/js/bootstrap.min.js"></script>
