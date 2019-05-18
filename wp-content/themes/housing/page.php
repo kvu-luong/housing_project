@@ -22,7 +22,7 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 			$page_id =  $wp_query->post->ID;
-			if( $page_id == 6){
+			if( $page_id == 6 || $page_id == 42){
 			get_template_part( 'template-parts/content', 'project' );
 			}else{
 				get_template_part( 'template-parts/content', 'page' );
