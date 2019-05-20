@@ -21,7 +21,7 @@ get_header();
       <div class="ws_images">
         <ul>
           <li>
-            <a href="http://wowslider.net">
+            <a href="#">
               <img src="<?php bloginfo('stylesheet_directory'); ?>/img/slider.jpg" alt="jquery image carousel" title="slider" id="wows1_0" />
             </a>
             <div class="container">
