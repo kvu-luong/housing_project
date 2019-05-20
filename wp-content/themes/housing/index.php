@@ -124,7 +124,7 @@ get_header();
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-4 new-infor__left wow slideInRight" data-wow-duration="2s">
+        <div class="col-sm-12 col-md-12 col-lg-4 new-infor__left wow slideInRight" data-wow-duration="1s">
           <!-- Nav tabs -->
           <ul class="nav nav-tabs">
             <li class="nav-item">

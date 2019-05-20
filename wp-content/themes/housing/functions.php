@@ -133,13 +133,13 @@ function housing_scripts() {
 
 	wp_enqueue_script( 'housing-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'housing-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-	wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.min.js', array ('jquery'),'20151215', true);
-	wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', array ('jquery'),'20151215', true);
-	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array ('jquery'),'20151215', true);
-	wp_enqueue_script( 'wowslider', get_template_directory_uri() . '/js/wowslider', array ('jquery'),'20151215', true);
-	wp_enqueue_script( 'script_wow', get_template_directory_uri() . '/js/script_wow', array ('jquery'),'20151215', true);
-	wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow', array ('jquery' ), '20151215', true);
-	wp_enqueue_script( 'my_script', get_template_directory_uri() . '/js/script', array ( 'jquery'), '20151215', true);
+	// wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.min.js', array ('jquery'),'20151215', true);
+	// wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', array ('jquery'),'20151215', true);
+	// wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array ('jquery'),'20151215', true);
+	// wp_enqueue_script( 'wowslider', get_template_directory_uri() . '/js/wowslider', array ('jquery'),'20151215', true);
+	// wp_enqueue_script( 'script_wow', get_template_directory_uri() . '/js/script_wow', array ('jquery'),'20151215', true);
+	// wp_enqueue_script( 'wow', get_template_directory_uri() . '/js/wow', array ('jquery' ), '20151215', true);
+	// wp_enqueue_script( 'my_script', get_template_directory_uri() . '/js/script', array ( 'jquery'), '20151215', true);
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
