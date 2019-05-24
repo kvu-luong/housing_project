@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="entry-header container">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -31,7 +31,7 @@
 
 	<?php housing_post_thumbnail(); ?>
 
-	<div class="entry-content">
+	<div class="entry-content container">
 		<?php
 		the_content( sprintf(
 			wp_kses(
@@ -50,10 +50,13 @@
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'housing' ),
 			'after'  => '</div>',
 		) );
+
+		echo get_field("new_right_content");
+		echo get_field("new_left_content");
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<!-- <footer class="entry-footer">
 		<?php housing_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	</footer>.entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

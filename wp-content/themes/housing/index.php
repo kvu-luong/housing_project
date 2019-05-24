@@ -15,42 +15,7 @@
 get_header();
 ?>
  
-<div class="slider" id="sliders">
-    <!-- Start WOWSlider.com BODY section -->
-    <div id="wowslider-container1">
-      <div class="ws_images">
-        <ul>
-          <li>
-            <a href="#">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/img/slider.jpg" alt="jquery image carousel" title="slider" id="wows1_0" />
-            </a>
-            <div class="container">
-              <div class="banner-content col-sm-4 d-sm-none animated tada delay-1s">
-                <p>TẦM NHÌN</p>
-                <div class="banner-item">
-                  <div>Tập đoàn kinh tế hàng đầu trong các lĩnh vực:</div>
-                  <div>Bất động sản – Tài chính – Du lịch – Phát triển Hạ tầng.</div>
-                </div>
-                <p>&nbsp;</p>
-              </div>
-            </div>
-
-          </li>
-          <li><img src="<?php bloginfo('stylesheet_directory'); ?>/img/slider2.jpg" alt="slider2" title="slider2" id="wows1_1" /></li>
-        </ul>
-      </div>
-      <div class="ws_bullets">
-        <div>
-          <a href="#" title="slider"><span>1</span></a>
-          <a href="#" title="slider2"><span>2</span></a>
-        </div>
-      </div>
-      <div class="ws_shadow"></div>
-    </div>
-
-
-    <!-- End WOWSlider.com BODY section -->
-  </div>
+ 
   <div class="separate"></div>
   <div class="new-infor" id="news">
     <div class="container">
@@ -281,7 +246,7 @@ get_header();
         <div class="col-sm-12 col-md-6 col-lg-6 customer-item wow slideInLeft" data-wow-delay="0.5s">
           <h5>Đăng Ký nhận bản tin</h5>
           <p>Kết nối với chúng tôi để theo dõi thông tin mới nhất</p>
-          <form>
+          <!-- <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
               <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp"
@@ -298,7 +263,8 @@ get_header();
               <input type="text" class="form-control" id="inputPhone" placeholder="Password">
             </div>
             <button type="submit" class="btn btn-success">Submit</button>
-          </form>
+          </form> -->
+     
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3 customer-item wow slideInUp" data-wow-delay="1s">
           <h5>Brochure Công Ty</h5>
