@@ -39,7 +39,7 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <div class="phone container">
-            <p>Tổng Đài CSKH :<span class="phone_number">1900 63 6666</span></p>
+            <p>HOTLINE :<span class="phone_number">1900 63 6666</span></p>
             <form class="search_form">
               <input type="text" id="search" placeholder="Tìm Kiếm..." class="close" />
               <div class="searchtoogle">

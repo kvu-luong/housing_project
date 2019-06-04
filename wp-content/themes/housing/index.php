@@ -23,7 +23,7 @@ get_header();
         <h2>Thông Tin Mới</h2>
       </div>
       <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-8 new-infor__right wow slideInLeft" data-wow-duration="1s">
+        <!-- <div class="col-sm-12 col-md-12 col-lg-8 new-infor__right wow slideInLeft" data-wow-duration="1s">
           <div class="col-sm-12 col-md-12 col-lg-12 new-item wow slideInLeft ">
             <div class="new-image">
               <img src="<?php bloginfo('stylesheet_directory'); ?>/img/infor_lg.jpg" alt="up-image">
@@ -90,7 +90,7 @@ get_header();
           </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4 new-infor__left wow slideInRight" data-wow-duration="1s">
-          <!-- Nav tabs -->
+          Nav tabs 
           <ul class="nav nav-tabs">
             <li class="nav-item">
               <a class="nav-link active" data-toggle="tab" href="#home">Thông Tin Thị Trường</a>
@@ -100,7 +100,7 @@ get_header();
             </li>
           </ul>
 
-          <!-- Tab panes -->
+          Tab panes 
           <div class="tab-content">
             <div class="tab-pane container active" id="home">
               <div class="time">
@@ -156,11 +156,15 @@ get_header();
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
+
+
+
+        
       </div>
     </div>
   </div>
-  <div class="project" id="projects">
+  <!-- <div class="project" id="projects">
     <div class="container text-center">
       <a href="#" alt="prevent auto add a tag"></a>
       <p class="project_title">Dự Án Tiêu Biểu</p>
@@ -239,7 +243,7 @@ get_header();
       </div>
 
     </div>
-  </div>
+  </div> -->
   <div class="customer_infor" id="customers">
     <div class="container">
       <div class="row">
@@ -266,12 +270,12 @@ get_header();
           </form> -->
      
         </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 customer-item wow slideInUp" data-wow-delay="1s">
+        <!-- <div class="col-sm-12 col-md-3 col-lg-3 customer-item wow slideInUp" data-wow-delay="1s">
           <h5>Brochure Công Ty</h5>
           <p>Download Brochure mới nhất của An Phúc để hiểu rõ hơn về chúng tôi</p>
           <a href="#">Tải brochure <em class="fa fa-caret-right" aria-hidden="true"></em></a>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-3 customer-item wow slideInUp mt-md-2" data-wow-delay="1.5s">
+        </div> -->
+        <div class="col-sm-12 col-md-12 col-lg-3 customer-item wow slideInUp mt-md-2">
           <h5>Hotline:<span>1900 90 9999</span></h5>
           <p>Email:<span>chamsockhachhang@novaland.com.vn</span></p>
         </div>

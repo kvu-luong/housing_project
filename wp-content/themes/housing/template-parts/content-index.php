@@ -67,7 +67,7 @@ while($home_title_arr->have_posts()){
 <div class="separate"></div>
 <div class="new-infor" id="news">
   <div class="container">
-    <div class="row title-infor">
+    <!-- <div class="row title-infor">
       <h2><?php echo $list_home_title["new"]; ?></h2>
     </div>
     <div class="row">
@@ -182,7 +182,7 @@ while($home_title_arr->have_posts()){
         }
         ?>
       <div class="col-sm-12 col-md-12 col-lg-4 new-infor__left wow slideInRight" data-wow-duration="1s">
-        <!-- Nav tabs -->
+         Nav tabs 
         <ul class="nav nav-tabs">
           <?php 
             $id_modify = array();//use it to make the different id
@@ -193,7 +193,7 @@ while($home_title_arr->have_posts()){
               <?php array_push($id_modify, "tab".$x); 
             } ?>
         </ul>
-        <!-- Tab panes -->
+        Tab panes 
         <div class="tab-content">
           <?php 
            if(count($list_left_infor) > 0){
@@ -220,14 +220,14 @@ while($home_title_arr->have_posts()){
             <?php }} ?>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
 
 
 <!-- project -->
 <div class="project" id="projects">
-  <div class="container text-center">
+  <!-- <div class="container text-center">
     <a href="#" alt="prevent auto add a tag"></a>
     <p class="project_title"><?php echo $list_home_title["project"]; ?></p>
   </div>
@@ -305,12 +305,12 @@ while($home_title_arr->have_posts()){
       <img src="<?php bloginfo('stylesheet_directory'); ?>/img/list_img.jpg" alt="slider">
     </div>
 
-  </div>
+  </div> -->
 </div>
 <div class="customer_infor" id="customers">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-6 customer-item wow slideInLeft" data-wow-delay="0.5s">
+      <div class="col-sm-12 col-md-8 col-lg-8 customer-item wow slideInLeft">
         <h5>Đăng Ký nhận bản tin</h5>
         <p>Kết nối với chúng tôi để theo dõi thông tin mới nhất</p>
         <!-- <form>
@@ -335,12 +335,12 @@ while($home_title_arr->have_posts()){
               echo do_shortcode("[contact-form-7 id=85 title=Contact form 1]");
          ?>
       </div>
-      <div class="col-sm-12 col-md-3 col-lg-3 customer-item wow slideInUp" data-wow-delay="1s">
+      <!-- <div class="col-sm-12 col-md-3 col-lg-3 customer-item wow slideInUp" data-wow-delay="1s">
         <h5>Brochure Công Ty</h5>
         <p>Download Brochure mới nhất của An Phúc để hiểu rõ hơn về chúng tôi</p>
         <a href="#">Tải brochure <em class="fa fa-caret-right" aria-hidden="true"></em></a>
-      </div>
-      <div class="col-sm-12 col-md-12 col-lg-3 customer-item wow slideInUp mt-md-2" data-wow-delay="1.5s">
+      </div> -->
+      <div class="col-sm-12 col-md-4 col-lg-4 customer-item wow slideInUp mt-md-2">
         <h5>Hotline:<span>1900 90 9999</span></h5>
         <p>Email:<span>chamsockhachhang@novaland.com.vn</span></p>
       </div>
