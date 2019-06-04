@@ -149,14 +149,17 @@ header .searchtoogle a {
 
 .my_nav,
 ul#my-navbar-js {
-    justify-content: space-between
+    justify-content: flex-end;
 }
-
+ul#my-navbar-js > li {
+    margin: 0 0 0 51px;
+}
 .search_form {
     display: flex;
     border-color: #2db34b;
     width: 30%
 }
+
 
 #search {
     border-color: #2db34b;
@@ -681,6 +684,17 @@ input.wpcf7-form-control.wpcf7-submit:hover {
     -webkit-box-shadow: 5px 5px 0px 0px #468184;
     -moz-box-shadow: 5px 5px 0px 0px #468184;
     box-shadow: 5px 5px 0px 0px #468184;
+}
+ul.dropdown-menu.depth_0.show {
+    width: auto;
+}
+ul.dropdown-menu.depth_0.show >li{
+    margin-bottom: 8px;
+    width: 200px;
+    padding-left: 10px;
+}
+ul.dropdown-menu.depth_0.show > li:hover {
+    background-color: #008000c7;
 }
 @media only screen and (max-width:776px) {
 
