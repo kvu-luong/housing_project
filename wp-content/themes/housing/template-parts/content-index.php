@@ -67,10 +67,13 @@ while($home_title_arr->have_posts()){
 <div class="separate"></div>
 <div class="new-infor" id="news">
   <div class="container">
-    <!-- <div class="row title-infor">
-      <h2><?php echo $list_home_title["new"]; ?></h2>
-    </div>
     <div class="row">
+
+       <?php
+              get_template_part( 'template-parts/content');
+        ?>
+      <!-- draft ----------------------------------------------------------------------------------- -->
+      <!--
       <div class="col-sm-12 col-md-12 col-lg-8 new-infor__right wow slideInLeft" data-wow-duration="1s">
         <?php 
             $new_arr = new WP_Query(array('post_type' => 'new_infor_right'));
@@ -219,8 +222,10 @@ while($home_title_arr->have_posts()){
                 </div>
             <?php }} ?>
         </div>
-      </div>
-    </div> -->
+      </div> -->
+      <!-- draft ----------------------------------------------------------------------------------- -->                
+
+    </div> 
   </div>
 </div>
 
@@ -332,8 +337,11 @@ while($home_title_arr->have_posts()){
             <button type="submit" class="btn btn-success">Submit</button>
           </form> -->
         <?php 
-              // echo do_shortcode("[contact-form-7 id=85 title=Contact form 1]");
-              echo do_shortcode("[contact-form-7 id=22 title=Contact form 1]");
+        if(do_shortcode("[contact-form-7 id=85 title=Contact form 1]") != '[contact-form-7 404 "Not Found"]'){
+              echo do_shortcode("[contact-form-7 id=85 title=Contact form 1]");
+              // if(do_shortcode("[contact-form-7 id=22 title=Contact form 1]") != '[contact-form-7 404 "Not Found"]'){
+              // echo do_shortcode("[contact-form-7 id=22 title=Contact form 1]");
+              }
          ?>
       </div>
       <!-- <div class="col-sm-12 col-md-3 col-lg-3 customer-item wow slideInUp" data-wow-delay="1s">

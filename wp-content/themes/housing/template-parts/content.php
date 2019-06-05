@@ -24,11 +24,9 @@
 			<article id="post-<?php the_ID(); ?>" <?php  post_class(); ?>>
 				<header class="entry-header container">
 					<?php
-					if ( is_singular() ) :
-						the_title( '<h1 class="entry-title">', '</h1>' );
-					else :
+			
 						the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-					endif;
+		
 
 					if ( 'post' === get_post_type() ) :
 						?>
@@ -44,9 +42,17 @@
 				<?php //housing_post_thumbnail(); ?>
 
 				<div class="entry-content container">
-					
-					<?php echo wp_trim_words( get_the_content(), 200, '...' ); ?>
-					<div><a href="<?php echo esc_url( get_permalink() ); ?>" class="btn my_button">Chi Tiết</a><div>
+					<div class="row">
+						<div class="col-xs-12 col-md-6 col-lg-6 row-eq-height">
+							<?php housing_post_thumbnail(); ?>
+						</div>
+						<div class="col-xs-12 col-md-6 col-lg-6 row-eq-height">
+							<div class="post_content">
+								<?php echo wp_trim_words( get_the_content(), 200, '...' ); ?>
+								<div><a href="<?php echo esc_url( get_permalink() ); ?>" class="btn my_button">Chi Tiết</a><div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</article><!-- #post-<?php the_ID(); ?> -->
 			<?php
