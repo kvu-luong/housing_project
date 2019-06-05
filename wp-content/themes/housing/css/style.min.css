@@ -232,7 +232,7 @@ ul#my-navbar-js > li {
 }
 
 .new-infor {
-    background-color: rgba(36, 130, 30, .78)
+    background-color: rgba(236, 236, 236, 0.77);
 }
 
 .new-infor .title-infor {
@@ -243,7 +243,8 @@ ul#my-navbar-js > li {
 
 .new-infor .title-infor h2 {
     font-size: 27px;
-    color: #fff;
+    color: #000;
+    font-weight: bold;
     text-transform: uppercase
 }
 
@@ -695,6 +696,50 @@ ul.dropdown-menu.depth_0.show >li{
 }
 ul.dropdown-menu.depth_0.show > li:hover {
     background-color: #008000c7;
+}
+.entry-header{
+    margin-bottom: 0px !important;
+}
+.entry-title > a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+.entry-title > a:hover {
+    color: green;
+    cursor: pointer;
+}
+.entry-title {
+    line-height: 25px;
+}
+.entry-meta {
+    color: green;
+    padding-bottom: 10px;
+    margin-top: -5px;
+}
+.my_button{
+    width: 100px;
+    height: 35px;
+    border: none;
+    background-color: #008000a8;
+    border-radius: 4%;
+    color: white;
+    -webkit-box-shadow: 5px 5px 5px 0px #468184;
+    -moz-box-shadow: 5px 5px 5px 0px #468184;
+    box-shadow: 5px 5px 5px 0px #468184;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.my_button:hover{
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 0px 0px #468184;
+    -moz-box-shadow: 5px 5px 0px 0px #468184;
+    box-shadow: 5px 5px 0px 0px #468184;
+}
+.category-project {
+    margin-bottom: 25px;
 }
 @media only screen and (max-width:776px) {
 

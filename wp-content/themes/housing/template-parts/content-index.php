@@ -332,7 +332,8 @@ while($home_title_arr->have_posts()){
             <button type="submit" class="btn btn-success">Submit</button>
           </form> -->
         <?php 
-              echo do_shortcode("[contact-form-7 id=85 title=Contact form 1]");
+              // echo do_shortcode("[contact-form-7 id=85 title=Contact form 1]");
+              echo do_shortcode("[contact-form-7 id=22 title=Contact form 1]");
          ?>
       </div>
       <!-- <div class="col-sm-12 col-md-3 col-lg-3 customer-item wow slideInUp" data-wow-delay="1s">

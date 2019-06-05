@@ -23,6 +23,10 @@ get_header();
         <h2>Thông Tin Mới</h2>
       </div>
       <div class="row">
+        <?php
+              get_template_part( 'template-parts/content');
+        ?>
+      <!--  draft ------------------------------------------------------------------------ -->
         <!-- <div class="col-sm-12 col-md-12 col-lg-8 new-infor__right wow slideInLeft" data-wow-duration="1s">
           <div class="col-sm-12 col-md-12 col-lg-12 new-item wow slideInLeft ">
             <div class="new-image">
@@ -157,10 +161,6 @@ get_header();
             </div>
           </div>
         </div> -->
-
-
-
-        
       </div>
     </div>
   </div>
@@ -247,7 +247,7 @@ get_header();
   <div class="customer_infor" id="customers">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6 customer-item wow slideInLeft" data-wow-delay="0.5s">
+        <div class="col-sm-12 col-md-8 col-lg-8 customer-item wow slideInLeft" data-wow-delay="0.5s">
           <h5>Đăng Ký nhận bản tin</h5>
           <p>Kết nối với chúng tôi để theo dõi thông tin mới nhất</p>
           <!-- <form>
@@ -268,14 +268,18 @@ get_header();
             </div>
             <button type="submit" class="btn btn-success">Submit</button>
           </form> -->
-     
+          <?php 
+              // echo do_shortcode("[contact-form-7 id=85 title=Contact form 1]");
+              echo do_shortcode("[contact-form-7 id=22 title=Contact form 1]");
+         ?>
         </div>
         <!-- <div class="col-sm-12 col-md-3 col-lg-3 customer-item wow slideInUp" data-wow-delay="1s">
           <h5>Brochure Công Ty</h5>
           <p>Download Brochure mới nhất của An Phúc để hiểu rõ hơn về chúng tôi</p>
           <a href="#">Tải brochure <em class="fa fa-caret-right" aria-hidden="true"></em></a>
         </div> -->
-        <div class="col-sm-12 col-md-12 col-lg-3 customer-item wow slideInUp mt-md-2">
+       
+        <div class="col-sm-12 col-md-4 col-lg-4 customer-item wow slideInUp mt-md-2">
           <h5>Hotline:<span>1900 90 9999</span></h5>
           <p>Email:<span>chamsockhachhang@novaland.com.vn</span></p>
         </div>
