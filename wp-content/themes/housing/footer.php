@@ -14,7 +14,7 @@
 
 	<footer>
     <div class="container">
-      <div class="row foot-nav-cover">
+      <!-- <div class="row foot-nav-cover">
         <div class="foot-nav">
           <h4>Giới Thiệu</h4>
           <ul>
@@ -62,7 +62,7 @@
             <li> <a href="#">Vị trí tuyển dụng</a></li>
             </li>
         </div>
-      </div>
+      </div> -->
       <div class="row my-row">
         <p class="note">Lưu ý: Hình ảnh chỉ mang tính chất minh họa.
           Mọi thông tin trên website này đúng tại thời điểm phát hành
@@ -71,13 +71,14 @@
       </div>
       <div class="row">
         <div class="col-sm-12 col-md-9 col-lg-9 end-footer">
-          <p>Tòa nhà văn phòng An Phúc,200 Phạm Ngũ Lão, P.Hùng Vương, Quận 1, TP.HCM
-            - ĐT: (08)999 99 999 - Hotline: 1900 99 9999</p>
-          <p>&copy; 2016. Bản quyền thuộc về Tập
-            đoàn An Phúc (Việt Nam). Tất cả các quyền được bảo hộ.&nbsp;</p>
+          <p>Tòa nhà văn phòng An Phúc,479 Mã Lò, 
+            Phường Bình Hưng Hòa A, Quận Bình Tân, TP.HCM - 
+            ĐT: (08)999 99 999 - Hotline: 1900 99 9999</p>
+          <p>&copy; <?php echo date("Y");?>. Bản quyền thuộc về Tập đoàn An Phúc (Việt Nam). 
+            Tất cả các quyền được bảo hộ.&nbsp;</p>
 
         </div>
-        <div class="col-sm-12 col-md-3 col-lg-3">
+        <!-- <div class="col-sm-12 col-md-3 col-lg-3">
           <ul class="social-media">
             <li>
               <a href="#" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -92,7 +93,7 @@
               <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
   </footer>

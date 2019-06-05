@@ -42,6 +42,7 @@
 						)
 					),
 					get_the_title()
+					
 				),
 				'<span class="edit-link">',
 				'</span>'

@@ -136,7 +136,7 @@ get_header();
                 <div class="col-sm-12 col-md-6 col-lg-6 customer-item">
                     <h5>Đăng Ký nhận bản tin</h5>
                     <p>Kết nối với chúng tôi để theo dõi thông tin mới nhất</p>
-                    <!-- <form>
+                    <form>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp"
@@ -154,10 +154,7 @@ get_header();
                             <input type="text" class="form-control" id="inputPhone" placeholder="Password">
                         </div>
                         <button type="submit" class="btn btn-success">Submit</button>
-                    </form> -->
-                    <?php 
-                        echo   do_shortcode("[contact-form-7 id=22 title=Contact form 1]" );
-                    ?>
+                    </form>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 customer-item">
                     <h5>Brochure Công Ty</h5>
