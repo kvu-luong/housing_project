@@ -758,6 +758,10 @@ ul.dropdown-menu.depth_0.show > li:hover {
     display: -ms-flexbox;
     display:         flex;
   }
+.position_custom{
+    position: fixed !important;
+    right: 0;
+}
 @media only screen and (max-width:776px) {
 
     a.ws_next,

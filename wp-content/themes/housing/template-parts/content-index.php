@@ -67,6 +67,9 @@ while($home_title_arr->have_posts()){
 <div class="separate"></div>
 <div class="new-infor" id="news">
   <div class="container">
+    <div class="row title-infor">
+      <h2><?php echo $list_home_title["project"]; ?></h2>
+    </div>
     <div class="row">
 
        <?php
