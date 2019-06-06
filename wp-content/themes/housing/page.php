@@ -28,7 +28,7 @@ get_header();
 			}elseif($page_id == 62){
 				get_template_part( 'template-parts/content', 'index');	
 			}else{
-				get_template_part( 'template-parts/content', 'page' );
+				get_template_part( 'template-parts/content_menu', 'page' );
 			}
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
