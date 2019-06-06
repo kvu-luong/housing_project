@@ -17,7 +17,8 @@
         'order'          => 'DESC'
         );
 		$featured_home = new WP_Query( $query );
-			
+			var_dump($feature_home);
+			exit();
 		if( $featured_home->have_posts() ) {
 		while ( $featured_home->have_posts() ) : $featured_home->the_post();
 			?>
