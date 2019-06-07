@@ -31,7 +31,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-color container-fluid fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img alt="logo" src="<?php bloginfo('stylesheet_directory'); ?>/img/icon.jpg">
+          <img alt="logo" src="<?php bloginfo('stylesheet_directory'); ?>/img/icon.png">
         </a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
           aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">

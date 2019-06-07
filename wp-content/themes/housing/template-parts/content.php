@@ -12,13 +12,11 @@
       $query = array(
         'posts_per_page' => -1,
         'post_type'      => 'post',
-        'category_name'  => 'project',
         'orderby'        => 'date',
         'order'          => 'DESC'
         );
 		$featured_home = new WP_Query( $query );
-			var_dump($feature_home);
-			exit();
+
 		if( $featured_home->have_posts() ) {
 		while ( $featured_home->have_posts() ) : $featured_home->the_post();
 			?>

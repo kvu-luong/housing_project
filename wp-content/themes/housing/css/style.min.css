@@ -762,6 +762,9 @@ ul.dropdown-menu.depth_0.show > li:hover {
     position: fixed !important;
     right: 0;
 }
+.navbar-light .navbar-brand{
+    width: 10%;
+}
 @media only screen and (max-width:776px) {
 
     a.ws_next,
