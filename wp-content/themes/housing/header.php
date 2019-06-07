@@ -30,7 +30,7 @@
 	<header>
     <nav class="navbar navbar-expand-lg navbar-light bg-color container-fluid fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="<?php echo esc_url( get_permalink() )?> ">
           <img alt="logo" src="<?php bloginfo('stylesheet_directory'); ?>/img/icon.png">
         </a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
@@ -48,8 +48,8 @@
                 </a>
               </div>
             </form>
-            <div class="language"><a class="transition" href="/en-US/Default.aspx" title="EN">EN</a>
-            </div>
+            <!-- <div class="language"><a class="transition" href="/en-US/Default.aspx" title="EN">EN</a>
+            </div> -->
           </div>
          
         <?php

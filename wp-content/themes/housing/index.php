@@ -15,16 +15,16 @@
 get_header();
 ?>
  
- 
+<!--  
   <div class="separate"></div>
   <div class="new-infor" id="news">
     <div class="container">
       <div class="row title-infor">
-        <h2>Thông Tin Mới</h2>
+        <h2><?php echo $list_home_title["project"]; ?></h2>
       </div>
-      <div class="row">
+      <div class="row"> -->
         <?php
-              get_template_part( 'template-parts/content');
+              get_template_part( 'template-parts/content',"index");
         ?>
       <!--  draft ------------------------------------------------------------------------ -->
         <!-- <div class="col-sm-12 col-md-12 col-lg-8 new-infor__right wow slideInLeft" data-wow-duration="1s">
@@ -161,9 +161,9 @@ get_header();
             </div>
           </div>
         </div> -->
-      </div>
+      <!-- </div>
     </div>
-  </div>
+  </div> -->
   <!-- <div class="project" id="projects">
     <div class="container text-center">
       <a href="#" alt="prevent auto add a tag"></a>
