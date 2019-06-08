@@ -23,7 +23,7 @@ get_header();
 			the_post();
 			$page_id =  $wp_query->post->ID;
 
-			if( $page_id == 6 || $page_id == 42 || $page_id == 37){
+			if( $page_id == 6 || $page_id == 42 || $page_id == 37 || $page_id == 226){
 				get_template_part( 'template-parts/content', 'project' );
 			}elseif($page_id == 62 || $page_id == 188){
 				get_template_part( 'template-parts/content', 'index');	
@@ -31,9 +31,9 @@ get_header();
 				get_template_part( 'template-parts/content_menu', 'page' );
 			}
 			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			// if ( comments_open() || get_comments_number() ) :
+			// 	comments_template();
+			// endif;
 
 		endwhile; // End of the loop.
 		?>

@@ -40,14 +40,12 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <div class="phone container">
             <p>HOTLINE :<span class="phone_number">1900 63 6666</span></p>
-            <form class="search_form">
-              <input type="text" id="search" placeholder="Tìm Kiếm..." class="close" />
-              <div class="searchtoogle">
-                <a id="dropdownSearchBtn" href="javascript:void(0);" title="Search">
-                  <i class="fa fa-search search_btn"></i>
-                </a>
-              </div>
-            </form>
+          <form role="search" method="get" class="search-form" action="<?php echo esc_url( get_permalink() )?>">
+				<label>
+					<input type="search" class="search-field" placeholder="Tìm kiếm …" value="" name="s">
+				</label>
+				<button type="submit" class="search-submit btn btn-primary" value="Tìm kiếm"><i class="fa fa-search" aria-hidden="true"></i></button>
+			<!-- <input type="hidden" name="lang" value="vi"></form> -->
             <!-- <div class="language"><a class="transition" href="/en-US/Default.aspx" title="EN">EN</a>
             </div> -->
           </div>
@@ -70,4 +68,3 @@
       </div>
     </nav>
   </header>
-

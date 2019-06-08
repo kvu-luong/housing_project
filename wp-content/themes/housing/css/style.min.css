@@ -128,6 +128,27 @@ header .searchtoogle a {
     border: 1px solid #ccc
 }
 
+button.search-submit.btn.btn-primary {
+    height: 40px;
+    background-color: #048404eb !important;
+}
+
+form.search-form {
+    display: flex;
+}
+
+input.search-field {
+    height: 40px;
+    width: 200px;
+    margin-left: 15px;
+}
+
+input.search-submit {
+    border: none;
+    background-color: green;
+    border-radius: 50%;
+}
+
 .language {
     padding-right: .5rem
 }
@@ -151,15 +172,16 @@ header .searchtoogle a {
 ul#my-navbar-js {
     justify-content: flex-end;
 }
-ul#my-navbar-js > li {
+
+ul#my-navbar-js>li {
     margin: 0 0 0 51px;
 }
+
 .search_form {
     display: flex;
     border-color: #2db34b;
     width: 30%
 }
-
 
 #search {
     border-color: #2db34b;
@@ -338,9 +360,9 @@ ul#my-navbar-js > li {
     margin: 0 0 20px
 }
 
-.foot-nav > ul {
+.foot-nav>ul {
     list-style: none;
-    margin: 0px ;
+    margin: 0px;
 }
 
 .foot-nav li a {
@@ -655,15 +677,18 @@ header {
     clear: both;
     font-weight: 700
 }
-span.wpcf7-form-control-wrap > input{
+
+span.wpcf7-form-control-wrap>input {
     width: 100%;
     height: 50px;
     border-top: none;
-    border-left:none;
+    border-left: none;
 }
-label{
+
+label {
     width: 100%;
 }
+
 textarea.wpcf7-form-control.wpcf7-textarea {
     width: 100%;
     height: 100px;
@@ -672,6 +697,7 @@ textarea.wpcf7-form-control.wpcf7-textarea {
     border-right: none;
     border-left: none;
 }
+
 input.wpcf7-form-control.wpcf7-submit {
     width: 150px;
     height: 50px;
@@ -682,45 +708,55 @@ input.wpcf7-form-control.wpcf7-submit {
     -moz-box-shadow: 5px 5px 5px 0px #468184;
     box-shadow: 5px 5px 5px 0px #468184;
 }
+
 input.wpcf7-form-control.wpcf7-submit:hover {
     -webkit-box-shadow: 5px 5px 0px 0px #468184;
     -moz-box-shadow: 5px 5px 0px 0px #468184;
     box-shadow: 5px 5px 0px 0px #468184;
 }
+
 ul.dropdown-menu.depth_0.show {
     width: auto;
     padding: 0px;
 }
-ul.dropdown-menu.depth_0.show >li{
+
+ul.dropdown-menu.depth_0.show>li {
     display: flex;
     justify-content: center;
 }
-ul.dropdown-menu.depth_0.show > li:hover {
+
+ul.dropdown-menu.depth_0.show>li:hover {
     background-color: #008000c7;
 }
-.entry-header{
+
+.entry-header {
     margin-bottom: 0px !important;
 }
-.entry-title > a {
+
+.entry-title>a {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
 }
-.entry-title > a:hover {
+
+.entry-title>a:hover {
     color: green;
     cursor: pointer;
 }
+
 .entry-title {
     line-height: 25px;
 }
+
 .entry-meta {
     color: green;
     padding-bottom: 10px;
     margin-top: -5px;
 }
-.my_button{
+
+.my_button {
     width: 100px;
     height: 35px;
     border: none;
@@ -733,55 +769,75 @@ ul.dropdown-menu.depth_0.show > li:hover {
     text-transform: uppercase;
     font-size: 15px;
 }
-.my_button:hover{
+
+.my_button:hover {
     cursor: pointer;
     -webkit-box-shadow: 5px 5px 0px 0px #468184;
     -moz-box-shadow: 5px 5px 0px 0px #468184;
     box-shadow: 5px 5px 0px 0px #468184;
 }
+
 .category-project {
     margin-bottom: 25px;
 }
-.post_content{
+
+.post_content {
     font-size: 16px;
 }
-.contact_title{
+
+.contact_title {
     font-size: 18px;
     font-weight: bold;
 }
-.wpcf7-form >p{
+
+.wpcf7-form>p {
     display: flex;
     justify-content: center;
 }
+
 .row-eq-height {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display:         flex;
-  }
-.position_custom{
+    display: flex;
+}
+
+.position_custom {
     position: fixed !important;
     right: 0;
 }
-.navbar-light .navbar-brand{
+
+.navbar-light .navbar-brand {
     width: 10%;
 }
+
 img[title="Tiếng Việt"] {
     width: 20px;
 }
+
 img[title="English"] {
     width: 20px;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     min-width: 100%;
 }
-@media only screen and (max-width:776px) {
 
+
+/* #comments{
+    display: none;
+} */
+
+h1.page-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:776px) {
     a.ws_next,
     a.ws_prev {
         display: none
     }
-
     .new_project {
         margin-left: 0
     }

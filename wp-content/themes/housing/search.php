@@ -11,15 +11,15 @@ get_header();
 ?>
 
 	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main container">
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<header class="m-0 container">
 				<h1 class="page-title">
 					<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'housing' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( 'Kết Quả Tìm Kiếm: %s', 'housing' ), '<span>' . get_search_query() . '</span>' );
 					?>
 				</h1>
 			</header><!-- .page-header -->
@@ -51,5 +51,5 @@ get_header();
 	</section><!-- #primary -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();

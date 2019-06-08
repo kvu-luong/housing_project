@@ -111,6 +111,14 @@
   <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/script_wow.js"></script>
   <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/wow.js"></script>
   <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/script.js"></script>
+
+  <script>
+    jQuery(document).ready(function(){
+      $('#dropdownSearchBtn').on('click',function(){
+         
+      });
+    });
+    </script>
 <?php wp_footer(); ?>
 
 </body>

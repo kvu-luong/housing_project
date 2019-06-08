@@ -14,12 +14,16 @@
 			<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
 		</header><!-- .entry-header -->
 		<div class="row">
-			<div class="entry-content col-xs-12 col-md-9 col-lg-9">
+			<?php
+			$upper_class = is_active_sidebar("sidebar-1") ? "col-xs-12 col-md-9 col-lg-9" : "col-xs-12 col-md-12 col-lg-12";
+			$lower_class = is_active_sidebar("sidebar-1") ? "position_custom d-sm-none d-md-block col-xs-12 col-md-3 col-lg-3" : "d-none";
+			?>
+			<div class="entry-content <?php echo $upper_class; ?>">
 				<?php
 			the_content();
 			?>
 			</div><!-- .entry-content -->
-			<div class="d-sm-none d-md-block col-md-3 col-lg-3 position_custom">
+			<div class="<?php echo $lower_class;?>">
 				<?php get_sidebar(); ?>
 			</div>
 		</div>

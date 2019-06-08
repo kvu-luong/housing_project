@@ -9,27 +9,37 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+<article id="post-<?php the_ID(); ?>" <?php  post_class(); ?>>
+				<header class="entry-header container">
+					<?php
+			
+						the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+		
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php
-			housing_posted_on();
-			housing_posted_by();
-			?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+					if ( 'post' === get_post_type() ) :
+						?>
+						<div class="entry-meta">
+							<?php
+							echo get_post_modified_time('F d, Y g:i a');
+							// housing_posted_by();
+							?>
+						</div><!-- .entry-meta -->
+					<?php endif; ?>
+				</header><!-- .entry-header -->
 
-	<?php housing_post_thumbnail(); ?>
+				<?php //housing_post_thumbnail(); ?>
 
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-
-	<footer class="entry-footer">
-		<?php housing_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+				<div class="entry-content container">
+					<div class="row">
+						<div class="col-xs-12 col-md-6 col-lg-6 row-eq-height">
+							<?php housing_post_thumbnail(); ?>
+						</div>
+						<div class="col-xs-12 col-md-6 col-lg-6 row-eq-height">
+							<div class="post_content">
+								<?php echo wp_trim_words( get_the_content(), 200, '...' ); ?>
+								<div><a href="<?php echo esc_url( get_permalink() ); ?>" class="btn my_button">Chi Tiết</a><div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article><!-- #post-<?php the_ID(); ?> -->
