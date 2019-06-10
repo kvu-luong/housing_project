@@ -10,17 +10,6 @@ while($home_title_arr->have_posts()){
 }
 
 ?>
-<div class="get-price_over">
-<?php 
-        if(do_shortcode("[contact-form-7 id=85 title=Contact form 1]") != '[contact-form-7 404 "Not Found"]'){
-              echo do_shortcode("[contact-form-7 id=85 title=Contact form 1]");
-              // if(do_shortcode("[contact-form-7 id=22 title=Contact form 1]") != '[contact-form-7 404 "Not Found"]'){
-              // echo do_shortcode("[contact-form-7 id=22 title=Contact form 1]");
-              }
-         ?>
-         <div class="price-title"><h3>Đăng ký nhận báo giá</h3></div>
-         
-</div>
 <div class="slider" id="sliders">
   <!-- Start WOWSlider.com BODY section -->
 

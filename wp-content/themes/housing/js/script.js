@@ -47,4 +47,13 @@ jQuery(window).scroll(function() {
         }]
     })
     new WOW().init();
+
+    $('.btn-close').click(function(e) {
+        e.preventDefault();
+        $('.get-price_over').css({ "display": "none" });
+    });
+    $('.get-price').click(function(e) {
+        e.preventDefault();
+        $('.get-price_over').css({ "display": "flex" });
+    })
 })

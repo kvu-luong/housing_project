@@ -68,4 +68,11 @@
       </div>
     </nav>
   </header>
-<button class="btn btn-danger get-price">Nhận Báo Giá</button>
+  <a href="#" class="btn btn-danger get-price">Nhận Báo Giá</a>
+  <div class="get-price_over ">
+         <div class="price-title">
+         <a href="#" class="btn-close"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+          <div class="animated bounceIn"> <?php echo do_shortcode("[contact-form-7 id=97 title=bao gia]"); ?></div>
+        </div>
+
+</div>
