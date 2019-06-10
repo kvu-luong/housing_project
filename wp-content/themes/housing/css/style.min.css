@@ -345,7 +345,7 @@ ul#my-navbar-js>li {
 .customer_infor {
     padding-top: 20px;
     padding-bottom: 50px;
-    background: url(../img/bot-bg.png)
+    background: url(../img/contact_bg.jpg)
 }
 
 .foot-nav-cover {
@@ -828,9 +828,36 @@ img[title="English"] {
     display: none;
 } */
 
+.news-caption {
+    display: flex;
+    flex-direction: column;
+}
+
 h1.page-title {
     font-size: 30px;
     font-weight: bold;
+}
+
+.get-price {
+    transform: rotate(90deg);
+    padding-left: 30px;
+    position: fixed;
+    right: -51px;
+    top: 400px;
+}
+
+.get-price_over {
+    position: absolute;
+    background-color: paleturquoise;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.price-title {
+    position: fixed;
 }
 
 @media only screen and (max-width:776px) {

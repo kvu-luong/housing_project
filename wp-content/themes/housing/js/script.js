@@ -1,12 +1,12 @@
 var e = jQuery("#back-to-top");
-jQuery(window).scroll(function () {
+jQuery(window).scroll(function() {
     300 < jQuery(window).scrollTop() ? e.addClass("show") : e.removeClass("show")
-}), e.on("click", function (e) {
+}), e.on("click", function(e) {
     e.preventDefault(), jQuery("html, body").animate({
         scrollTop: 0
     }, "300")
-}), jQuery(document).ready(function () {
-    for (var e = document.getElementById("my-navbar-js").getElementsByClassName("nav-item"), s = 0; s < e.length; s++) e[s].addEventListener("click", function () {
+}), jQuery(document).ready(function() {
+    for (var e = document.getElementById("my-navbar-js").getElementsByClassName("nav-item"), s = 0; s < e.length; s++) e[s].addEventListener("click", function() {
         var e = document.getElementsByClassName("active");
         e[0].className = e[0].className.replace(" active", ""), this.className += " active"
     });
@@ -28,5 +28,23 @@ jQuery(window).scroll(function () {
         }]
     })
 
+    jQuery(".relate-slider").slick({
+        slidesToShow: 5,
+        // centerMode: !0,
+        autoplaySpeed: 1500,
+        slidesToScroll: 1,
+        autoplay: true,
+        responsive: [{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 776,
+            settings: {
+                slidesToShow: 1,
+            }
+        }]
+    })
     new WOW().init();
-});
+})

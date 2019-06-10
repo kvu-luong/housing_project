@@ -68,3 +68,4 @@
       </div>
     </nav>
   </header>
+<button class="btn btn-danger get-price">Nhận Báo Giá</button>
