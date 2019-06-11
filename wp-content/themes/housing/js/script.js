@@ -42,18 +42,23 @@ jQuery(window).scroll(function() {
         }, {
             breakpoint: 776,
             settings: {
+                slidesToShow: 2,
+            }
+        }, {
+            breakpoint: 375,
+            settings: {
                 slidesToShow: 1,
             }
         }]
     })
     new WOW().init();
 
-    $('.btn-close').click(function(e) {
+    $('.get-price_over').click(function(e) {
         e.preventDefault();
-        $('.get-price_over').css({ "display": "none" });
+        $('.form-get-price').css({ "display": "none" });
     });
     $('.get-price').click(function(e) {
         e.preventDefault();
-        $('.get-price_over').css({ "display": "flex" });
+        $('.form-get-price').css({ "display": "block" });
     })
 })

@@ -67,12 +67,14 @@
         </div>
       </div>
     </nav>
-  </header>
-  <a href="#" class="btn btn-danger get-price">Nhận Báo Giá</a>
-  <div class="get-price_over ">
-         <div class="price-title">
-         <a href="#" class="btn-close"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+    <div class="form-get-price">
+    <div class="get-price_over "></div>
+        <div class="price-title">
+          <div class="form-title"><p>Vui lòng điền thông tin vào form bên dưới để nhận báo giá từ chúng tôi<p></div>
           <div class="animated bounceIn"> <?php echo do_shortcode("[contact-form-7 id=97 title=bao gia]"); ?></div>
         </div>
-
-</div>
+  </div>
+  </header>
+  <a href="#" class="btn btn-danger get-price">Nhận Báo Giá</a>
+  
+  

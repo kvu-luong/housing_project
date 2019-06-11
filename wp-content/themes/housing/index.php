@@ -244,13 +244,13 @@ get_header();
 
     </div>
   </div> -->
-  <div class="customer_infor" id="customers">
+  <!-- <div class="customer_infor" id="customers">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-8 col-lg-8 customer-item wow slideInLeft" data-wow-delay="0.5s">
           <h5>Đăng Ký nhận bản tin</h5>
           <p>Kết nối với chúng tôi để theo dõi thông tin mới nhất</p>
-          <!-- <form>
+           <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
               <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp"
@@ -267,17 +267,17 @@ get_header();
               <input type="text" class="form-control" id="inputPhone" placeholder="Password">
             </div>
             <button type="submit" class="btn btn-success">Submit</button>
-          </form> -->
+          </form> 
           <?php 
               // echo do_shortcode("[contact-form-7 id=85 title=Contact form 1]");
               echo do_shortcode("[contact-form-7 id=22 title=Contact form 1]");
          ?>
         </div>
-        <!-- <div class="col-sm-12 col-md-3 col-lg-3 customer-item wow slideInUp" data-wow-delay="1s">
+        <div class="col-sm-12 col-md-3 col-lg-3 customer-item wow slideInUp" data-wow-delay="1s">
           <h5>Brochure Công Ty</h5>
           <p>Download Brochure mới nhất của An Phúc để hiểu rõ hơn về chúng tôi</p>
           <a href="#">Tải brochure <em class="fa fa-caret-right" aria-hidden="true"></em></a>
-        </div> -->
+        </div> 
        
         <div class="col-sm-12 col-md-4 col-lg-4 customer-item wow slideInUp mt-md-2">
           <h5>Hotline:<span>1900 90 9999</span></h5>
@@ -285,7 +285,7 @@ get_header();
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   
 
 <?php
