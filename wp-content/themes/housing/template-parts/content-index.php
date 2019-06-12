@@ -317,20 +317,25 @@ while($home_title_arr->have_posts()){
 </div>
 
 <!-- relate company -->
+<?php
+
+
+?>
 <div class="relate-company">
   <div class="container">
     <div class="row">
-      <div class="relate col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-        <h3>Các đối tác chiến lược</h3>
+      <div class=" title-infor relate col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+        <h2>Các đối tác chiến lược</h2>
         <p>Nhiều ngân hàng lớn nhỏ tham gia </p>
       </div>
       <div class="relate-slider container">
-        <div><img src="<?php bloginfo('stylesheet_directory'); ?>/img/01_vietin.png" alt="relate-slider" /></div>
-        <div><img src="<?php bloginfo('stylesheet_directory'); ?>/img/02_bidv.png" alt="relate-slider" /></div>
-        <div><img src="<?php bloginfo('stylesheet_directory'); ?>/img/03_vietcombank.png" alt="relate-slider" /></div>
-        <div><img src="<?php bloginfo('stylesheet_directory'); ?>/img/04_techcombank.png" alt="relate-slider" /></div>
-        <div><img src="<?php bloginfo('stylesheet_directory'); ?>/img/05_vpbank.png" alt="relate-slider" /></div>
-        <div><img src="<?php bloginfo('stylesheet_directory'); ?>/img/06_tpbank.png" alt="relate-slider" /></div>
+        <?php
+         $company_arr = new WP_Query(array("post_type"=>"company"));
+         while($company_arr->have_posts()){
+           $company_arr->the_post();
+        ?>
+           <div><img src="<?php echo   get_field("company_icon"); ?>" alt="relate-slider"/></div>
+        <?php } ?>
       </div>
     </div>
   </div>
@@ -340,29 +345,13 @@ while($home_title_arr->have_posts()){
 <div class="relate-news">
   <div class="container">
     <div class="row">
-      <div class="new-caption col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-            <h3>Tin Tức</h3>
+      <div class="title-infor col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+            <h2>Tin Tức</h2>
       </div>
-      <div class="new-top col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      
+      <!-- <div class="new-top col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <div class="row">
-          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/new1.png" alt="relate-news" />
-          </div>
-          <div class="news-caption col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
-            <div class="new_title">
-              <h4>Dự án mở rộng tuyến quốc lộ 50 tới Long An</h4>
-            </div>
-            <div class=time><i class="fa fa-calendar" aria-hidden="true"></i><span> 25 Tháng 8 2019</span></div>
-            <div>
-              <p>NDĐT - Ngày 3-4, tại Trung tâm học tập cộng đồng xã Tân Tập, huyện Cần Giuộc, tỉnh Long An,
-                UBND tỉnh Long An đã tổ chức khởi công dự án mở rộng tuyến đường từ</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="new-top col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <div class="row">
-          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
+          <div class="zoom col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
             <img src="<?php bloginfo('stylesheet_directory'); ?>/img/new2.jpg" alt="relate-news" />
           </div>
           <div class="news-caption col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
@@ -379,7 +368,7 @@ while($home_title_arr->have_posts()){
       </div>
       <div class="new-top col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <div class="row">
-          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
+          <div class="zoom col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
             <img src="<?php bloginfo('stylesheet_directory'); ?>/img/new3.jpg" alt="relate-news" />
           </div>
           <div class="news-caption col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
@@ -396,7 +385,7 @@ while($home_title_arr->have_posts()){
       </div>
       <div class="new-top col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <div class="row">
-          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
+          <div class="zoom col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
             <img src="<?php bloginfo('stylesheet_directory'); ?>/img/new4.jpg" alt="relate-news" />
           </div>
           <div class="news-caption col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
@@ -410,61 +399,14 @@ while($home_title_arr->have_posts()){
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="customer_infor" id="customers">
-  <div class="container">
-    <div class="row">
-      <div class="infor-caption col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-            <h3>Liên Hệ</h3>
-            <p>Vui lòng điền thông tin vào form bên dưới hoặc gọi cho chúng tôi<p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-6 customer-item wow slideInLeft">
-        <h5>Đăng Ký nhận bản tin</h5>
-        <p>Kết nối với chúng tôi để theo dõi thông tin mới nhất</p>
-        <!-- <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp"
-                placeholder="Email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Name</label>
-              <input type="text" class="form-control" id="inputName" placeholder="Password">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Phone</label>
-              <input type="text" class="form-control" id="inputPhone" placeholder="Password">
-            </div>
-            <button type="submit" class="btn btn-success">Submit</button>
-          </form> -->
-        <?php 
-        if(do_shortcode("[contact-form-7 id=85 title=Contact form 1]") != '[contact-form-7 404 "Not Found"]'){
-              echo do_shortcode("[contact-form-7 id=85 title=Contact form 1]");
-              // if(do_shortcode("[contact-form-7 id=22 title=Contact form 1]") != '[contact-form-7 404 "Not Found"]'){
-              // echo do_shortcode("[contact-form-7 id=22 title=Contact form 1]");
-              }else{
-                echo do_shortcode("[contact-form-7 id=22 title=Contact form 1]");
-        
-              }
-         ?>
-      </div>
-      <!-- <div class="col-sm-12 col-md-3 col-lg-3 customer-item wow slideInUp" data-wow-delay="1s">
-        <h5>Brochure Công Ty</h5>
-        <p>Download Brochure mới nhất của An Phúc để hiểu rõ hơn về chúng tôi</p>
-        <a href="#">Tải brochure <em class="fa fa-caret-right" aria-hidden="true"></em></a>
       </div> -->
-      <div class="col-sm-12 col-md-6 col-lg-6 customer-item wow slideInUp mt-md-2">
-        <h5>Hotline:<span>1900 90 9999</span></h5>
-        <p>Email:<span>chamsockhachhang@novaland.com.vn</span></p>
-      </div>
-
+      
+      <?php
+              get_template_part( 'template-parts/content_index','news');
+        ?>
     </div>
   </div>
 </div>
+<?php
+get_footer();
+?>

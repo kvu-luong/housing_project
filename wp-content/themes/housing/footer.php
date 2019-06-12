@@ -10,7 +10,60 @@
  */
 
 ?>
+<div class="customer_infor" id="customers">
+  <div class="container">
+    <div class="row">
+      <div class="title-infor col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+          <h2>Dự án tiêu biểu</h2>
+            <p>Vui lòng điền thông tin vào form bên dưới hoặc gọi cho chúng tôi<p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6 customer-item wow slideInLeft">
+        <h5>Đăng Ký nhận bản tin</h5>
+        <p>Kết nối với chúng tôi để theo dõi thông tin mới nhất</p>
+        <!-- <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp"
+                placeholder="Email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Name</label>
+              <input type="text" class="form-control" id="inputName" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Phone</label>
+              <input type="text" class="form-control" id="inputPhone" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form> -->
+        <?php 
+        if(do_shortcode("[contact-form-7 id=85 title=Contact form 1]") != '[contact-form-7 404 "Not Found"]'){
+              echo do_shortcode("[contact-form-7 id=85 title=Contact form 1]");
+              // if(do_shortcode("[contact-form-7 id=22 title=Contact form 1]") != '[contact-form-7 404 "Not Found"]'){
+              // echo do_shortcode("[contact-form-7 id=22 title=Contact form 1]");
+              }else{
+                echo do_shortcode("[contact-form-7 id=22 title=Contact form 1]");
+        
+              }
+         ?>
+      </div>
+      <!-- <div class="col-sm-12 col-md-3 col-lg-3 customer-item wow slideInUp" data-wow-delay="1s">
+        <h5>Brochure Công Ty</h5>
+        <p>Download Brochure mới nhất của An Phúc để hiểu rõ hơn về chúng tôi</p>
+        <a href="#">Tải brochure <em class="fa fa-caret-right" aria-hidden="true"></em></a>
+      </div> -->
+      <div class="col-sm-12 col-md-6 col-lg-6 customer-item wow slideInUp mt-md-2">
+        <h5>Hotline:<span>1900 90 9999</span></h5>
+        <p>Email:<span>chamsockhachhang@novaland.com.vn</span></p>
+      </div>
 
+    </div>
+  </div>
+</div>
 
 	<footer>
     <div class="container">

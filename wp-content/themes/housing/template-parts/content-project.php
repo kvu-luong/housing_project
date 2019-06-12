@@ -13,15 +13,18 @@ get_header();
 ?>
   <?php
       $query = array(
-        'posts_per_page' => -1,
-        'post_type'      => 'post',
+		'posts_per_page' => -1,
+		'category_name' => 'project',
+		'post_type'      => 'post',
         'orderby'        => 'date',
-        'order'          => 'DESC'
+		'order'          => 'DESC',
+		
         );
 		$featured_home = new WP_Query( $query );
 
 		if( $featured_home->have_posts() ) {
 		while ( $featured_home->have_posts() ) : $featured_home->the_post();
+
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php  post_class(); ?>>
 				<header class="entry-header container">

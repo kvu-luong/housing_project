@@ -72,7 +72,7 @@
     <div class="get-price_over "></div>
         <div class="price-title">
           <div class="form-title"><p>Vui lòng điền thông tin vào form bên dưới để nhận báo giá từ chúng tôi<p></div>
-          <div class="animated bounceIn"> <?php echo do_shortcode("[contact-form-7 id=97 title=bao gia]"); ?></div>
+          <div class="animated bounceIn"> <?php echo do_shortcode("[contact-form-7 id=244 title=bao gia]"); ?></div>
         </div>
   </div>
   </header>

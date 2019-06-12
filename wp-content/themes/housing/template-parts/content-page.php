@@ -15,7 +15,11 @@
 		</header><!-- .entry-header -->
 		<div class="row">
 			<?php
+			// var_dump(is_active_sidebar("sidebar-1"));
+			// exit();
 			$upper_class = is_active_sidebar("sidebar-1") ? "col-xs-12 col-md-9 col-lg-9" : "col-xs-12 col-md-12 col-lg-12";
+			// var_dump($upper_class);
+			// exit();
 			$lower_class = is_active_sidebar("sidebar-1") ? "position_custom d-sm-none d-md-block col-xs-12 col-md-3 col-lg-3" : "d-none";
 			?>
 			<div class="entry-content <?php echo $upper_class; ?>">
@@ -28,7 +32,7 @@
 			</div>
 		</div>
 	</article>
-	<div class="d-flex justify-content-center">
+	<!-- <div class="d-flex justify-content-center">
 		<div class="col-xs-12 col-md-6 col-lg-6">
 			<div><p class="contact_title">Để biết thêm thông tin chi tiết , hãy liên hệ với chúng tôi</p><div>
 			<div>
@@ -41,5 +45,5 @@
 					?>
 			</div>
 		</div>
-	</div>
+	</div> -->
 </div>

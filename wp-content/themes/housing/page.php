@@ -27,6 +27,8 @@ get_header();
 				get_template_part( 'template-parts/content', 'project' );
 			}elseif($page_id == 62 || $page_id == 188){
 				get_template_part( 'template-parts/content', 'index');	
+			}elseif($page_id == 17){
+				get_template_part( 'template-parts/content', 'news');	
 			}else{
 				get_template_part( 'template-parts/content_menu', 'page' );
 			}
