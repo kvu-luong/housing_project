@@ -10,12 +10,12 @@ while($home_title_arr->have_posts()){
 }
 
 ?>
-  <div class="slider" id="sliders">
-    <!-- Start WOWSlider.com BODY section -->
-    
-    <div id="wowslider-container1">
-      <div class="ws_images">
-        <ul>
+<div class="slider" id="sliders">
+  <!-- Start WOWSlider.com BODY section -->
+
+  <div id="wowslider-container1">
+    <div class="ws_images">
+      <ul>
 
         <?php 
        $slider_arr = new WP_Query(array("post_type"=>"slider"));
@@ -29,41 +29,41 @@ while($home_title_arr->have_posts()){
         $total_slide++;
 
     ?>
-          <li>
-            <a href="<?php echo get_the_permalink() ?>">
-              <img src="<?php echo $image_link; ?>" alt="jquery image carousel" title="slider" id="wows1_0" />
-            </a>
-            <div class="container">
-              <div class="banner-content col-sm-4 d-sm-none animated tada delay-1s">
-                <p><?php echo $slide_title; ?></p>
-                <div class="banner-item">
-                  <div><?php echo $slide_caption ; ?></div>
-                </div>
-                <p>&nbsp;</p>
+        <li>
+          <a href="<?php echo get_the_permalink() ?>">
+            <img src="<?php echo $image_link; ?>" alt="jquery image carousel" title="slider" id="wows1_0" />
+          </a>
+          <div class="container">
+            <div class="banner-content col-sm-4 d-sm-none animated tada delay-1s">
+              <p><?php echo $slide_title; ?></p>
+              <div class="banner-item">
+                <div><?php echo $slide_caption ; ?></div>
               </div>
+              <p>&nbsp;</p>
             </div>
+          </div>
 
-          </li>
-      <?php } ?>
-     </ul>
-      </div>
-      <div class="ws_bullets">
-        <div>
-          <?php 
+        </li>
+        <?php } ?>
+      </ul>
+    </div>
+    <div class="ws_bullets">
+      <div>
+        <?php 
           for($x = 0 ; $x < $total_slide; $x++){
             ?>
-              <a href="#" title="slider"><span><?php echo ($x+1); ?></span></a>
-            <?php
+        <a href="#" title="slider"><span><?php echo ($x+1); ?></span></a>
+        <?php
           }
           ?>
-        </div>
       </div>
-      <div class="ws_shadow"></div>
     </div>
-
-
-    <!-- End WOWSlider.com BODY section -->
+    <div class="ws_shadow"></div>
   </div>
+
+
+  <!-- End WOWSlider.com BODY section -->
+</div>
 <div class="separate"></div>
 <div class="new-infor" id="news">
   <div class="container">
@@ -72,7 +72,7 @@ while($home_title_arr->have_posts()){
     </div>
     <div class="row">
 
-       <?php
+      <?php
               get_template_part( 'template-parts/content');
         ?>
       <!-- draft ----------------------------------------------------------------------------------- -->
@@ -226,9 +226,9 @@ while($home_title_arr->have_posts()){
             <?php }} ?>
         </div>
       </div> -->
-      <!-- draft ----------------------------------------------------------------------------------- -->                
+      <!-- draft ----------------------------------------------------------------------------------- -->
 
-    </div> 
+    </div>
   </div>
 </div>
 
@@ -315,10 +315,115 @@ while($home_title_arr->have_posts()){
 
   </div> -->
 </div>
+
+<!-- relate company -->
+<div class="relate-company">
+  <div class="container">
+    <div class="row">
+      <div class="relate col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+        <h3>Các đối tác chiến lược</h3>
+        <p>Nhiều ngân hàng lớn nhỏ tham gia </p>
+      </div>
+      <div class="relate-slider container">
+        <div><img src="<?php bloginfo('stylesheet_directory'); ?>/img/01_vietin.png" alt="relate-slider" /></div>
+        <div><img src="<?php bloginfo('stylesheet_directory'); ?>/img/02_bidv.png" alt="relate-slider" /></div>
+        <div><img src="<?php bloginfo('stylesheet_directory'); ?>/img/03_vietcombank.png" alt="relate-slider" /></div>
+        <div><img src="<?php bloginfo('stylesheet_directory'); ?>/img/04_techcombank.png" alt="relate-slider" /></div>
+        <div><img src="<?php bloginfo('stylesheet_directory'); ?>/img/05_vpbank.png" alt="relate-slider" /></div>
+        <div><img src="<?php bloginfo('stylesheet_directory'); ?>/img/06_tpbank.png" alt="relate-slider" /></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- --------------------------------------------------------------------- -->
+
+<div class="relate-news">
+  <div class="container">
+    <div class="row">
+      <div class="new-caption col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+            <h3>Tin Tức</h3>
+      </div>
+      <div class="new-top col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="row">
+          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/new1.png" alt="relate-news" />
+          </div>
+          <div class="news-caption col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
+            <div class="new_title">
+              <h4>Dự án mở rộng tuyến quốc lộ 50 tới Long An</h4>
+            </div>
+            <div class=time><i class="fa fa-calendar" aria-hidden="true"></i><span> 25 Tháng 8 2019</span></div>
+            <div>
+              <p>NDĐT - Ngày 3-4, tại Trung tâm học tập cộng đồng xã Tân Tập, huyện Cần Giuộc, tỉnh Long An,
+                UBND tỉnh Long An đã tổ chức khởi công dự án mở rộng tuyến đường từ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="new-top col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="row">
+          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/new2.jpg" alt="relate-news" />
+          </div>
+          <div class="news-caption col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
+            <div class="new_title">
+              <h4>Dự án mở rộng tuyến quốc lộ 50 tới Long An</h4>
+            </div>
+            <div class=time><i class="fa fa-calendar" aria-hidden="true"></i><span> 25 Tháng 8 2019</span></div>
+            <div>
+              <p>NDĐT - Ngày 3-4, tại Trung tâm học tập cộng đồng xã Tân Tập, huyện Cần Giuộc, tỉnh Long An,
+                UBND tỉnh Long An đã tổ chức khởi công dự án mở rộng tuyến đường từ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="new-top col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="row">
+          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/new3.jpg" alt="relate-news" />
+          </div>
+          <div class="news-caption col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
+            <div class="new_title">
+              <h4>Dự án mở rộng tuyến quốc lộ 50 tới Long An</h4>
+            </div>
+            <div class=time><i class="fa fa-calendar" aria-hidden="true"></i><span> 25 Tháng 8 2019</span></div>
+            <div>
+              <p>NDĐT - Ngày 3-4, tại Trung tâm học tập cộng đồng xã Tân Tập, huyện Cần Giuộc, tỉnh Long An,
+                UBND tỉnh Long An đã tổ chức khởi công dự án mở rộng tuyến đường từ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="new-top col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="row">
+          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/new4.jpg" alt="relate-news" />
+          </div>
+          <div class="news-caption col-xs-12 col-sm-6 col-md-6 col-lg-6 row-eq-height">
+            <div class="new_title">
+              <h4>Dự án mở rộng tuyến quốc lộ 50 tới Long An</h4>
+            </div>
+            <div class=time><i class="fa fa-calendar" aria-hidden="true"></i><span> 25 Tháng 8 2019</span></div>
+            <div>
+              <p>NDĐT - Ngày 3-4, tại Trung tâm học tập cộng đồng xã Tân Tập, huyện Cần Giuộc, tỉnh Long An,
+                UBND tỉnh Long An đã tổ chức khởi công dự án mở rộng tuyến đường từ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="customer_infor" id="customers">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-8 col-lg-8 customer-item wow slideInLeft">
+      <div class="infor-caption col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+            <h3>Liên Hệ</h3>
+            <p>Vui lòng điền thông tin vào form bên dưới hoặc gọi cho chúng tôi<p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6 customer-item wow slideInLeft">
         <h5>Đăng Ký nhận bản tin</h5>
         <p>Kết nối với chúng tôi để theo dõi thông tin mới nhất</p>
         <!-- <form>
@@ -344,6 +449,9 @@ while($home_title_arr->have_posts()){
               echo do_shortcode("[contact-form-7 id=85 title=Contact form 1]");
               // if(do_shortcode("[contact-form-7 id=22 title=Contact form 1]") != '[contact-form-7 404 "Not Found"]'){
               // echo do_shortcode("[contact-form-7 id=22 title=Contact form 1]");
+              }else{
+                echo do_shortcode("[contact-form-7 id=22 title=Contact form 1]");
+        
               }
          ?>
       </div>
@@ -352,10 +460,11 @@ while($home_title_arr->have_posts()){
         <p>Download Brochure mới nhất của An Phúc để hiểu rõ hơn về chúng tôi</p>
         <a href="#">Tải brochure <em class="fa fa-caret-right" aria-hidden="true"></em></a>
       </div> -->
-      <div class="col-sm-12 col-md-4 col-lg-4 customer-item wow slideInUp mt-md-2">
+      <div class="col-sm-12 col-md-6 col-lg-6 customer-item wow slideInUp mt-md-2">
         <h5>Hotline:<span>1900 90 9999</span></h5>
         <p>Email:<span>chamsockhachhang@novaland.com.vn</span></p>
       </div>
+
     </div>
   </div>
 </div>

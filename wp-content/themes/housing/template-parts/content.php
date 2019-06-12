@@ -10,10 +10,11 @@
 ?>
   <?php
       $query = array(
-        'posts_per_page' => 5,
+		'posts_per_page' => 5,
+		'category_name' => 'project-vi',
         'post_type'      => 'post',
         'orderby'        => 'date',
-        'order'          => 'DESC'
+		'order'          => 'DESC'
         );
 		$featured_home = new WP_Query( $query );
 
@@ -56,10 +57,9 @@
 			</article><!-- #post-<?php the_ID(); ?> -->
 			<?php
 			endwhile;
-  		}
+		  }
 
 
 		// echo get_field("new_right_content");
 		// echo get_field("new_left_content");
 ?>
-

@@ -41,10 +41,11 @@
           <div class="phone container">
             <p>HOTLINE :<span class="phone_number">1900 63 6666</span></p>
           <form role="search" method="get" class="search-form" action="<?php echo esc_url( get_permalink() )?>">
-				<label>
-					<input type="search" class="search-field" placeholder="Tìm kiếm …" value="" name="s">
-				</label>
-				<button type="submit" class="search-submit btn btn-primary" value="Tìm kiếm"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <label>
+              <input type="search" class="search-field" placeholder="Tìm kiếm …"  name="s"  required>
+            </label>
+			    	<button id="search-post" type="submit" class="search-submit btn btn-primary" value="Tìm kiếm"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </form>
 			<!-- <input type="hidden" name="lang" value="vi"></form> -->
             <!-- <div class="language"><a class="transition" href="/en-US/Default.aspx" title="EN">EN</a>
             </div> -->
@@ -67,4 +68,13 @@
         </div>
       </div>
     </nav>
+    <div class="form-get-price">
+    <div class="get-price_over "></div>
+        <div class="price-title">
+          <div class="form-title"><p>Vui lòng điền thông tin vào form bên dưới để nhận báo giá từ chúng tôi<p></div>
+          <div class="animated bounceIn"> <?php echo do_shortcode("[contact-form-7 id=97 title=bao gia]"); ?></div>
+        </div>
+  </div>
   </header>
+  <a href="#" class="btn btn-danger get-price">Nhận Báo Giá</a>
+  
