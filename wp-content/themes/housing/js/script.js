@@ -53,12 +53,55 @@ jQuery(window).scroll(function() {
     })
     new WOW().init();
 
-    $('.get-price_over').click(function(e) {
+    jQuery('.get-price_over').click(function(e) {
         e.preventDefault();
-        $('.form-get-price').css({ "display": "none" });
+        jQuery('.form-get-price').css({ "display": "none" });
     });
-    $('.get-price').click(function(e) {
+    jQuery('.get-price').click(function(e) {
         e.preventDefault();
-        $('.form-get-price').css({ "display": "block" });
-    })
+        jQuery('.form-get-price').css({ "display": "block" });
+    });
+    //check validation
+    jQuery('#search-post').on("click", function() {
+        var search = jQuery('.search-field').val();
+        var regex = /[<>'";`\s]/gi;
+        if (search == '') {
+            alert("Missing input information!");
+            return false;
+        } else if (regex.test(search)) {
+            alert("Input should not contain special charater!");
+            return false;
+        }
+    });
+    jQuery('#baogia').on("click", function() {
+        console.log("hello");
+        var name = jQuery('.kh_name').val();
+        var mail = jQuery('.kh_mail').val();
+        var message = jQuery('.kh_message').val();
+        var regex = /[<>'";`\s]/gi;
+        if (name == '') {
+            alert("Missing name input information!");
+            return false;
+        }
+        if (regex.test(name)) {
+            alert("Input should not contain special charater!");
+            return false;
+        }
+        if (mail == '') {
+            alert("Missing mail input information!");
+            return false;
+        }
+        if (regex.test(mail)) {
+            alert("Input should not contain special charater!");
+            return false;
+        }
+        if (message == '') {
+            alert("Missing message input information!");
+            return false;
+        }
+        if (regex.test(message)) {
+            alert("Input should not contain special charater!");
+            return false;
+        }
+    });
 })
