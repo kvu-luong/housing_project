@@ -5,7 +5,11 @@ while($home_title_arr->have_posts()){
   $home_title_arr->the_post();
   $list_home_title = array(
     "new" => get_field("new_infor"),
-    "project"=> get_field("famous_project")
+    "project"=> get_field("famous_project"),
+    "company" => get_field("relate_company"),
+    "company_caption" => get_field("company_caption"),
+    "contact" => get_field("contact"),
+    "contact_caption" => get_field("contact_caption")
   );
 }
 
@@ -325,8 +329,8 @@ while($home_title_arr->have_posts()){
   <div class="container">
     <div class="row">
       <div class=" title-infor relate col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-        <h2>Các đối tác chiến lược</h2>
-        <p>Nhiều ngân hàng lớn nhỏ tham gia </p>
+        <h2><?php echo $list_home_title["company"]; ?></h2>
+        <p><?php echo $list_home_title["company_caption"]; ?> </p>
       </div>
       <div class="relate-slider container">
         <?php
@@ -346,7 +350,7 @@ while($home_title_arr->have_posts()){
   <div class="container">
     <div class="row">
       <div class="title-infor col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-            <h2>Tin Tức</h2>
+            <h2><?php echo $list_home_title["new"]; ?> </h2>
       </div>
       
       <!-- <div class="new-top col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -408,5 +412,5 @@ while($home_title_arr->have_posts()){
   </div>
 </div>
 <?php
-get_footer();
+// get_footer();
 ?>

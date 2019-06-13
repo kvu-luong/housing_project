@@ -40,7 +40,7 @@ i.fa {
 
 #back-to-top {
     display: inline-block;
-    background-color: green;
+    background-color: #1a3e77;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -70,7 +70,7 @@ i.fa {
 }
 
 #back-to-top:hover:after {
-    color: green
+    color: #1a3e77
 }
 
 #back-to-top:active {
@@ -114,7 +114,7 @@ img {
 
 .phone_number {
     font-size: 20px;
-    color: #2db34b
+    color: #1a3e77
 }
 
 header .language a,
@@ -132,7 +132,7 @@ header .searchtoogle a {
 
 button.search-submit.btn.btn-primary {
     height: 40px;
-    background-color: #048404eb !important;
+    background-color: #1a3e77 !important;
 }
 
 form.search-form {
@@ -147,7 +147,7 @@ input.search-field {
 
 input.search-submit {
     border: none;
-    background-color: green;
+    background-color: #1a3e77;
     border-radius: 50%;
 }
 
@@ -181,12 +181,12 @@ ul#my-navbar-js>li {
 
 .search_form {
     display: flex;
-    border-color: #2db34b;
+    border-color: #1a3e77;
     width: 30%
 }
 
 #search {
-    border-color: #2db34b;
+    border-color: #1a3e77;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -199,7 +199,7 @@ ul#my-navbar-js>li {
 }
 
 .search_icon {
-    border: 1px solid #2db34b;
+    border: 1px solid #1a3e77;
     padding: 6px;
     border-radius: 50%
 }
@@ -237,7 +237,7 @@ ul#my-navbar-js>li {
 }
 
 .tab-caption a:hover {
-    color: #2db34b
+    color: #1a3e77
 }
 
 .time {
@@ -279,7 +279,7 @@ ul#my-navbar-js>li {
     height: 3px;
     margin: 15px auto 30px;
     width: 80px;
-    background: #2db34b
+    background: #1a3e77
 }
 
 .new-infor .new-infor__left {
@@ -301,7 +301,7 @@ ul#my-navbar-js>li {
 }
 
 .new-infor .new-infor__right .infor a:hover {
-    color: #2db34b
+    color: #1a3e77
 }
 
 .new-infor .new-infor__right .new-caption {
@@ -333,7 +333,7 @@ ul#my-navbar-js>li {
 
 .customer-item span {
     font-size: 16px;
-    color: #2db34b
+    color: #a07a27
 }
 
 .customer-item a {
@@ -342,7 +342,7 @@ ul#my-navbar-js>li {
 }
 
 .customer-item a:hover {
-    color: #2db34b
+    color: #1a3e77
 }
 
 .customer_infor {
@@ -402,7 +402,7 @@ ul#my-navbar-js>li {
 }
 
 .social-media a {
-    color: green;
+    color: #1a3e77;
     font-size: 1.5rem
 }
 
@@ -443,7 +443,7 @@ footer {
 
 .slick-next:before,
 .slick-prev:before {
-    color: green;
+    color: #1a3e77;
     display: none;
 }
 
@@ -461,7 +461,7 @@ footer {
     height: 3px;
     margin: 15px auto 30px;
     width: 80px;
-    background: #2db34b
+    background: #1a3e77
 }
 
 .hidden_bg {
@@ -514,7 +514,7 @@ footer {
 }
 
 .card-overplay .link-project>a:hover {
-    color: #009a00;
+    color: #1a3e77;
     text-decoration: none
 }
 
@@ -535,7 +535,7 @@ footer {
 
 .banner-content:before {
     content: "";
-    border-left: 5px solid #adff2f;
+    border-left: 5px solid #1a3e77;
     padding-left: 10px;
     height: 100%;
     position: absolute;
@@ -586,7 +586,9 @@ header {
 }
 
 .title-infor h2 {
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: bold;
 }
 
 .title-infor h2:after {
@@ -595,11 +597,11 @@ header {
     height: 3px;
     margin: 15px auto 30px;
     width: 80px;
-    background: #2db34b
+    background: #1a3e77
 }
 
 .new_project {
-    background-color: rgba(20, 199, 56, .72);
+    background-color: #1a3e77;
     margin-left: 15px
 }
 
@@ -712,7 +714,7 @@ input.wpcf7-form-control.wpcf7-submit {
     width: 150px;
     height: 50px;
     border: none;
-    background-color: #008000a8;
+    background-color: #1a3e77;
     border-radius: 4%;
     -webkit-box-shadow: 5px 5px 5px 0px #468184;
     -moz-box-shadow: 5px 5px 5px 0px #468184;
@@ -736,7 +738,7 @@ ul.dropdown-menu.depth_0.show>li {
 }
 
 ul.dropdown-menu.depth_0.show>li:hover {
-    background-color: #008000c7;
+    background-color: #1a3e77;
 }
 
 .entry-header {
@@ -761,7 +763,7 @@ ul.dropdown-menu.depth_0.show>li:hover {
 }
 
 .entry-meta {
-    color: green;
+    color: #1a3e77;
     padding-bottom: 10px;
     margin-top: -5px;
 }
@@ -770,7 +772,7 @@ ul.dropdown-menu.depth_0.show>li:hover {
     width: 100px;
     height: 35px;
     border: none;
-    background-color: #008000a8;
+    background-color: #1a3e77;
     border-radius: 4%;
     color: white;
     -webkit-box-shadow: 5px 5px 5px 0px #468184;

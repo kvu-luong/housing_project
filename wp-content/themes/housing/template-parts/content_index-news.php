@@ -15,7 +15,7 @@ get_header();
       $query = array(
         'posts_per_page' => -1,
         'post_type'      => 'post',
-        'category_name' => 'news',
+        // 'category_name' => 'news',
         'orderby'        => 'date',
         'order'          => 'DESC',
         'cat_name' => 'news'
@@ -24,8 +24,7 @@ get_header();
 
 		if( $featured_home->have_posts() ) {
         while ( $featured_home->have_posts() ) : $featured_home->the_post();
-        // var_dump(get_the_category());
-        // exit();
+        if( has_category( array('news', 'news_en') ) ){
             ?>
         <div class="new-top col-xs-12 col-sm-12 col-md-6 col-lg-6 row-eq_height">
             <div class="row">
@@ -51,6 +50,7 @@ get_header();
             </div>
         </div>
         <?php
+        }
 			endwhile;
   		}
 ?>

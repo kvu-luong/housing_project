@@ -8,19 +8,28 @@
  *
  * @package housing
  */
-
+$home_title_arr = new WP_Query(array("post_type"=>"home_title"));
+$list_home_title = array();
+while($home_title_arr->have_posts()){
+  $home_title_arr->the_post();
+  $list_home_title = array(
+    "contact" => get_field("contact"),
+    "contact_caption" => get_field("contact_caption")
+  );
+}
 ?>
+
 <div class="customer_infor" id="customers">
   <div class="container">
     <div class="row">
       <div class="title-infor col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-          <h2>Dự án tiêu biểu</h2>
-            <p>Vui lòng điền thông tin vào form bên dưới hoặc gọi cho chúng tôi<p>
+          <h2><?php echo $list_home_title["contact"]; ?></h2>
+            <p><?php echo $list_home_tile["contact_caption"]; ?><p>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-12 col-md-6 col-lg-6 customer-item wow slideInLeft">
-        <h5>Đăng Ký nhận bản tin</h5>
+        <h5><?php echo esc_html__("Đăng ký nhận bản tin")?></h5>
         <p>Kết nối với chúng tôi để theo dõi thông tin mới nhất</p>
         <!-- <form>
             <div class="form-group">
