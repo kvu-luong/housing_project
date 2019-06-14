@@ -10,17 +10,19 @@
 ?>
   <?php
       $query = array(
-		'posts_per_page' => 5,
+		'posts_per_page' => -1,
 		// 'category_name' =>'project',
         'post_type'      => 'post',
         'orderby'        => 'date',
 		'order'          => 'DESC'
         );
 		$featured_home = new WP_Query( $query );
-
+		$check = 0;
 		if( $featured_home->have_posts() ) {
 		while ( $featured_home->have_posts() ) : $featured_home->the_post();
 		if( has_category( array('project', 'project_en') ) ){
+			if($check < 5){
+				$check ++;
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php  post_class(); ?>>
 				<header class="entry-header container">
@@ -57,6 +59,7 @@
 				</div>
 			</article><!-- #post-<?php the_ID(); ?> -->
 			<?php
+			}
 				}
 			endwhile;
 		  }

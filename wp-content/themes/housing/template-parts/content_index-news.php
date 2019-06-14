@@ -21,10 +21,12 @@ get_header();
         'cat_name' => 'news'
         );
 		$featured_home = new WP_Query( $query );
-
+        $check = 0;
 		if( $featured_home->have_posts() ) {
         while ( $featured_home->have_posts() ) : $featured_home->the_post();
         if( has_category( array('news', 'news_en') ) ){
+            if($check < 4){
+                $check++;
             ?>
         <div class="new-top col-xs-12 col-sm-12 col-md-6 col-lg-6 row-eq_height">
             <div class="row">
@@ -50,6 +52,7 @@ get_header();
             </div>
         </div>
         <?php
+            }
         }
 			endwhile;
   		}
