@@ -21,7 +21,7 @@
  
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
  
-
+  <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/img/favicon.ico">
   <?php wp_head(); ?>
 </head>
 
