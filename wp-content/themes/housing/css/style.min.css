@@ -324,7 +324,7 @@ ul#my-navbar-js>li {
 }
 
 .customer-item h5 {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 700;
     color: #fff;
     margin: 0 0 10px;
@@ -333,7 +333,9 @@ ul#my-navbar-js>li {
 
 .customer-item span {
     font-size: 16px;
-    color: #a07a27
+    color: #d07e15;
+    font-weight: bold;
+    padding-left: 10px;
 }
 
 .customer-item a {
@@ -962,6 +964,10 @@ div[role="form"]>p {
 
 .infor-caption>h3 {
     padding-top: 60px;
+}
+label{
+    color: #d07e15;
+    font-size: 20px;
 }
 
 @-webkit-keyframes glowing {
