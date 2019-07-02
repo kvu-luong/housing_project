@@ -335,7 +335,6 @@ ul#my-navbar-js>li {
     font-size: 16px;
     color: #d07e15;
     font-weight: bold;
-    padding-left: 10px;
 }
 
 .customer-item a {
@@ -965,9 +964,18 @@ div[role="form"]>p {
 .infor-caption>h3 {
     padding-top: 60px;
 }
-label{
+
+label {
     color: #d07e15;
     font-size: 20px;
+}
+
+.benifit {
+    min-height: 264px;
+}
+
+span.wpcf7-form-control-wrap>input {
+    padding-left: 10px;
 }
 
 @-webkit-keyframes glowing {
@@ -1030,6 +1038,11 @@ label{
     }
 }
 
+.elementor-295 .elementor-element.elementor-element-fd8e9d6>.elementor-widget-container {
+    display: flex;
+    justify-content: center;
+}
+
 @media only screen and (max-width:776px) {
     a.ws_next,
     a.ws_prev {
@@ -1037,5 +1050,11 @@ label{
     }
     .new_project {
         margin-left: 0
+    }
+    .elementor-element.elementor-element-7b5.elementor-column.elementor-col-50.elementor-top-column {
+        width: 100%;
+    }
+    .elementor-element.elementor-element-21bb.elementor-column.elementor-col-50.elementor-top-column {
+        width: 100%;
     }
 }
