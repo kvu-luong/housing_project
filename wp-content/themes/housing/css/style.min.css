@@ -978,6 +978,10 @@ span.wpcf7-form-control-wrap>input {
     padding-left: 10px;
 }
 
+section.elementor-element.elementor-element-6d8.elementor-section-content-middle.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default.elementor-section.elementor-top-section {
+    padding-top: 0px;
+}
+
 @-webkit-keyframes glowing {
     0% {
         background-color: #B20000;
