@@ -12,21 +12,24 @@ get_header();
 
 ?>
   <?php
+  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
       $query = array(
-		'posts_per_page' => -1,
-		
+		'posts_per_page' => 2,
+		'paged' => $paged, 
 		'post_type'      => 'post',
         'orderby'        => 'date',
 		'order'          => 'DESC',
 		
         );
 		$featured_home = new WP_Query( $query );
-
+		$temp_query = $wp_query;
+		$wp_query = null;
+		$wp_query = $featured_home;
 		if( $featured_home->have_posts() ) {
 		while ( $featured_home->have_posts() ) : $featured_home->the_post();
 		// var_dump(get_the_category());
 		// var_dump(has_category( array('project', 'project_en') ));
-		if( has_category( array('project', 'project_en') ) ){
+		// if( has_category( array('project', 'project_en') ) ){
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php  post_class(); ?>>
 				<header class="entry-header container">
@@ -63,13 +66,14 @@ get_header();
 				</div>
 			</article><!-- #post-<?php the_ID(); ?> -->
 			<?php
-			}
+			// }
 			endwhile;
-  		}
+			wpbeginner_numeric_posts_nav($featured_home);
+		  }
+		  wp_reset_postdata();
 
+$wp_query = NULL;
+$wp_query = $temp_query;
 
-		// echo get_field("new_right_content");
-		// echo get_field("new_left_content");
-
-// get_footer();
 ?>
+<?php  ?>
